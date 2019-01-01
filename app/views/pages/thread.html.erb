@@ -1,11 +1,11 @@
-<h1>プロジェクト<%= @board.title %></h1>
+<h1><%= @board.title %></h1>
 
 <div>
-<h2>プロジェクト概要</h2>
+<h2>プロジェクト内容</h2>
 <p><%= @board.content %></p>
 
 
-<h2>プロジェクト一覧</h2>
+<h2>コメント一覧</h2>
 <% @comments.each do |comment| %>
 	<div class="comment">
 		投稿者: <%= comment.user.name %>(<%= comment.created_at.to_s %>)<br>
