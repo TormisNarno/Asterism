@@ -1,0 +1,17 @@
+<div id= "title">TOP</div>
+
+<% if session[:id] %>
+    <div><%= link_to "ログアウト", "/logout" %></div>
+<% else %>
+	<div><%= link_to "ユーザー登録", "/user/register" %></div>
+	<div><%= link_to "ログイン", "/login" %></div>
+<% end %>
+
+<div><%= link_to "プロジェクト作成", "/board/create" %></div>
+
+<h1>プロジェクト一覧</h1>
+<% @boards.each do |board| %>
+   <% link_text = board.title+"(作成日時:"+board.created_at.to_s+")"%>
+   <% link_url = "/board/"+board.id.to_s %>
+   <% link_to link_text, link_url %><br>
+<% end %>

@@ -1,0 +1,24 @@
+
+<h1>プロジェクト作成</h1>
+
+<%= form_tag("/board/create", method: :post) do %>
+<div class="msr_text_02">
+	<%= label_tag "タイトル" %>
+</div>
+	<%= text_field_tag :title %><br>
+<div class="msr_textarea_02">
+	<%= label_tag "内容" %><br>
+	<%= text_area_tag :content %>
+</div><br>
+	<%= label_tag "ジャンル" %><br>
+	<%= submit_tag "送信" %>
+<% end %>
+</div>
+
+<div>
+　例<br>
+ プロジェクトタイトル：劇団屍鬼<br>
+　募集内容：キャスト募集：5名<br>
+　補足情報：期間三か月：<br>
+　連絡先：000-0000-0000：屍鬼@gmail.com<br>
+</div>

@@ -1,0 +1,21 @@
+<h1>プロジェクト<%= @board.title %></h1>
+
+<div>
+<h2>プロジェクト概要</h2>
+<p><%= @board.content %></p>
+
+
+<h2>プロジェクト一覧</h2>
+<% @comments.each do |comment| %>
+	<div class="comment">
+		投稿者: <%= comment.user.name %>(<%= comment.created_at.to_s %>)<br>
+		<%= comment.comment %>
+	</div>
+<% end %>
+
+<h2>コメント投稿</h2>
+<%= form_tag("/board/"+@board.id.to_s, method: :post) do %>
+	<%= text_area_tag :comment %><br>
+	<%= submit_tag "作成" %>
+<% end %><br>
+</div>
