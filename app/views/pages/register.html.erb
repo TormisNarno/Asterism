@@ -3,7 +3,8 @@
 <%= form_tag("/user/register", method: :post) do %>
 	<%= label_tag "ユーザー名" %>
 	<%= text_field_tag :username %><br>
-	<%= label_tag "パスワード"　%>
+	<%= label_tag "パスワード" %>
 	<%= password_field_tag :password %><br>
-	<%= submit_tag "送信">	
+	<%= submit_tag "送信" %>
+	
 <% end %>
