@@ -1,13 +1,27 @@
-<h1>Pages#login</h1>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title="login">
+  <link rel="stylesheet" type="text/css" href="application.css">
 
-<% if flash[:error_message] %>
-	<div><%= flash[:error_message] %></div>
-<% end %>
+</head>
+<body>
+  <h1　div="midasi">Asterism</h1>
 
-<%= form_tag("/login", method: :post) do %>
-	<%= label_tag "ユーザー名" %>
-	<%= text_field_tag :username %><br>
-	<%= label_tag "パスワード" %>
-	<%= password_field_tag :password %><br>
-	<%= submit_tag "送信" %>
-<% end %>
+  <% if flash[:error_message] %>
+    <div class="error"><%=flash[:error_message] %></div>
+  <%end%>
+
+  <div class="inp">
+  <%= form_tag("/login",method:
+  :post) do %>
+    <%= label_tag"名前" %>
+    <%= text_field_tag :username%><br>
+    <%= label_tag"パスワード" %>
+    <%= password_field_tag :password%><br>
+    <%=submit_tag"送信" %>
+  <% end %>
+  </div>
+  <a  class="reg" href="/register">新規登録はこちらから</a><br>
+</body>
+</html>

@@ -1,0 +1,26 @@
+h1{
+  color:black;
+  font-size: 1in;
+  font-weight: bold;
+  font-family: 'ヒラギノ明朝 Pro W3',Georgia；cursive;
+  text-align: center
+}
+.erorr{
+  color:red;
+  text-align: center;
+
+}
+
+.inp{
+  color:black;
+  font-size: ;
+  text-align: center;
+}
+
+
+.reg{
+  A:link{color:blue};
+  A:visited{color:red};
+  text-align: center;
+
+}

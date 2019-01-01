@@ -1,10 +1,19 @@
-<h1>Pages#register</h1>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title="register">
+</head>
+<body>
+  <h1>Well Come to Asterism</h1>
 
-<%= form_tag("/user/register", method: :post) do %>
-	<%= label_tag "ユーザー名" %>
-	<%= text_field_tag :username %><br>
-	<%= label_tag "パスワード" %>
-	<%= password_field_tag :password %><br>
-	<%= submit_tag "送信" %>
-	
-<% end %>
+  <%= form_tag("/register",method:
+  :post) do %>
+    <%= label_tag"名前" %>
+    <%= text_field_tag :username%><br>
+    <%= label_tag"パスワード" %>
+    <%= password_field_tag :password%><br>
+    <%=submit_tag"送信" %>
+  <% end %>
+  
+</body>
+</html>
