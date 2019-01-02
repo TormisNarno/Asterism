@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  get "/register",to:"pages#register"
-  get "/login",to:"pages#login"
-  get "/home",to:"pages#home"
-  post"/register",to:"pages#register_user"
-  post"/login",to:"pages#login_check"
-  get "/logout",to:"pages#logout"
+  get '/',to:"pages#top"
+  get '/register',to:"pages#register"
+  get '/login',to:"pages#login"
+  post'/register',to:"pages#register_user"
+  post'/login',to:"pages#login_check"
+  get '/logout',to:"pages#logout"
   
   get 'board/create', to: "pages#thread_create"
   post 'board/create', to: "pages#thread_create_process"
