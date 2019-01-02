@@ -40,7 +40,66 @@ class PagesController < ApplicationController
       "ユーザー名かパスワードが間違っています"}
     end
 
-
+  def thread_create
+   if !session[:id]
+	  redirect_to "/login"
+   end
+  end
+  
+  def thread_create_process
+     title = params[:title]
+     content = params[:content]
+   
+     board = Board.new
+     board.title = title
+     board.content = content
+     board.save
+   
+     redirect_to "/"
+  end
+  
+  
+  def thread
+   if !session[:id]
+	  redirect_to "/login"
+   end
+  
+   id = params[:id]
+  
+   @board = Board.find(id)
+  
+   if !@board
+      redirect_to "/"
+   end
+   
+   @comments = @board.comments 
+   
+  end
+  
+  def add_comment
+  
+    id = params[:id]
+	board = Board.find(id)
+	
+	if !board
+	   redirect_to "/"
+	end
+	
+	user_id = session[:id]
+	user = User.find(user_id)
+	
+	comment_text = params[:comment]
+	
+	comment = Comment.new
+	comment.comment = comment_text
+	comment.board = board
+	comment.user = user;
+	comment.save
+	
+	redirect_to "/board/"+id.to_s
+	
+  end
+    
    
   end
 
