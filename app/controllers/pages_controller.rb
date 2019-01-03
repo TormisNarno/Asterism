@@ -1,10 +1,14 @@
 class PagesController < ApplicationController
+  def top
+    @boards = Board.all
+  end
+  
   def register
   end
 
   def register_user
-    username=params[:username]
-    password=params[:password]
+    username = params[:username]
+    password = params[:password]
 
     user = User.new
     user.name = username
@@ -15,30 +19,30 @@ class PagesController < ApplicationController
   end
 
   def login #ログインしたことある人はそのままhomeへ
+    if session[:id]
+	    redirect_to "/"
+	end
   end
 
   def logout
     session[:id] = nil;
     redirect_to "/login"
-
   end
-
+  
   def login_check
     username = params[:username]
     password = params[:password]
 
-    user = User.where("name=? and password=?",
-     username, password)
-     user=user[0]
+    user = User.where("name=? and password=?", username, password)
+    user=user[0]
 
     if user 
       session[:id] = user.id;
       redirect_to "/"
     else
-      redirect_to "/login",flash:
-      {error_message:
-      "ユーザー名かパスワードが間違っています"}
+      redirect_to "/login", flash: {error_message: "ユーザー名かパスワードが間違っています"}
     end
+	
 
   def thread_create
    if !session[:id]
@@ -96,13 +100,8 @@ class PagesController < ApplicationController
 	comment.user = user;
 	comment.save
 	
-	redirect_to "/board/"+id.to_s
-	
+	redirect_to "/board/"+id.to_s	
   end
-    
-   
-  end
-
-  def home
-  end
+  
+end
 end

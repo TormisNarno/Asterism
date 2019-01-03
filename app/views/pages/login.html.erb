@@ -6,22 +6,21 @@
 
 </head>
 <body>
-  <h1　div="midasi">Asterism</h1>
+  <h1>Asterism</h1>
 
   <% if flash[:error_message] %>
     <div class="error"><%=flash[:error_message] %></div>
   <%end%>
 
   <div class="inp">
-  <%= form_tag("/login",method:
-  :post) do %>
-    <%= label_tag"名前" %>
+  <%= form_tag("/login",method: :post) do %>
+    <%= label_tag "名前" %>
     <%= text_field_tag :username%><br>
-    <%= label_tag"パスワード" %>
+    <%= label_tag "パスワード" %>
     <%= password_field_tag :password%><br>
-    <%=submit_tag"送信" %>
+    <%= submit_tag "送信" %>
   <% end %>
   </div>
-  <a  class="reg" href="/register">新規登録はこちらから</a><br>
+  <a class="reg" href="/register">新規登録はこちらから</a><br>
 </body>
 </html>
