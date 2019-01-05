@@ -1,0 +1,573 @@
+h1 {
+  color:white;
+  font-size: 20pt;
+  text-align: center;
+}
+
+.intro{
+  color:white;
+  line-height: normal;
+  font-size: 13pt;
+  font-family: "SmartFontUI";
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.error{
+  color:red;
+  text-align: center;
+}
+
+.button{
+  margin-top: 30px;
+}
+@font-face {
+  font-family: "Anurati";
+  src: url(/assets/fonts/Anurati-Regular-9b6c41cb089ea9f682f177d2a5dc21e1828c39e6f20b9a4c11d999de912e00c3.otf) format("opentype");
+}
+@font-face {
+  font-family: "SmartFontUI";
+  src: url(/assets/fonts/03SmartFontUI-ccb6e16356e8871d50df767fa776df59a056ac9cdb244b8eae76013fe6e16491.ttf) format("truetype");
+}
+.body {
+  padding: 2em;
+}
+
+.pjform {
+  margin: 0px 400px;
+  align-content: center;
+  color: white;
+}
+
+.example {
+  padding: 0.5em 1em;
+  margin: 40px 400px;
+  border: solid 2px lightgrey;
+  text-align: center;
+  color: lightgrey;
+}
+
+.box1 p {
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------------------------------
+テキスト
+---------------------------------------*/
+
+.msr_text_02 {
+  padding-bottom: 20px;
+  width: 460px;
+}
+.msr_text_02  label {
+  display: block;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.msr_text_02 input[type=text] {
+  border: 1px solid #1B73BA;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #333;
+  font-size: 13px;
+  padding: 10px;
+  height: 40px;
+  width: 460px;
+}
+
+/*--------------------------------------
+ラジオボタン
+---------------------------------------*/
+
+.msr_radio_02 {
+  padding-bottom: 20px;
+}
+.msr_radio_02 p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.msr_radio_02 input[type=radio] {
+  display: none;
+  margin: 0;
+}
+.msr_radio_02 input[type=radio] + label {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.5px;
+  margin-right: 12px;
+  padding: 0 0 3px 24px;
+  position: relative;
+}
+.msr_radio_02 input[type=radio] + label::before {
+  border: 1px solid #1B73BA;
+  border-radius: 50%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  content: "";
+  display: block;
+  margin-top: -9px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 13px;
+  width: 13px;
+}
+.msr_radio_02 input[type=radio]:checked + label::after {
+  background: #1B73BA;
+  border-radius: 50%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  content: "";
+  display: block;
+  margin-top: -4px;
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  height: 7px;
+  width: 7px;
+}
+
+/*--------------------------------------
+チェックボックス
+---------------------------------------*/
+
+.msr_chack_02 {
+  padding-bottom: 20px;
+}
+.msr_chack_02 p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.msr_chack_02 input[type=checkbox] {
+  display: none;
+  margin: 0;
+}
+.msr_chack_02 input[type=checkbox] + label {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.5px;
+  margin-right: 12px;
+  padding: 0 0 0 24px;
+  position: relative;
+}
+.msr_chack_02 input[type=checkbox] + label::before {
+  background: #1B73BA;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  content: "";
+  display: block;
+  margin-top: -9px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 14px;
+  width: 14px;
+}
+.msr_chack_02 input[type=checkbox]:checked + label::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+}
+.msr_chack_02 input[type=checkbox]:checked + label::after {
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  left: 3px;
+  margin-top: -7px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  height: 6px;
+  width: 9px;
+}
+
+/*--------------------------------------
+プルダウン
+---------------------------------------*/
+
+.msr_pulldown_02 {
+  padding-bottom: 20px;
+  position: relative;
+  width: 230px;
+}
+.msr_pulldown_02 p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.msr_pulldown_02 select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url(/stylerecipe_img/msr02_pulldown_btn01.png) no-repeat right;
+  border-top: 1px solid #1B73BA;
+  border-bottom: 1px solid #1B73BA;
+  border-left: 1px solid #1B73BA;
+  border-right: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  cursor: pointer;
+  color: #333;
+  text-indent: .01px;
+  text-overflow: "";
+  padding: 10px;
+  height: 40px;
+  width: 230px;
+}
+
+/*--------------------------------------
+ファイル選択
+---------------------------------------*/
+
+.msr_file_02 {
+  padding-bottom: 20px;
+  width: 460px;
+}
+.msr_file_02>p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.msr_filebox_02 {
+  position: relative;
+}
+.msr_filebox_02 input[type=file] {
+  display: none;
+}
+.msr_filebox_02 label {
+  border: 1px solid #1B73BA;
+  cursor: pointer;
+  font-size: 14px;
+  display: block;
+  position: relative;
+  padding: 10px;
+  height: 20px;
+  width: 460px;
+}
+.msr_filebox_02 label:before {
+  background: #1B73BA;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  content: "Browse...";
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 40px;
+  width: 99px;
+}
+
+/*--------------------------------------
+テキストエリア
+---------------------------------------*/
+
+.msr_textarea_02 {
+  padding-bottom: 10px;
+  width: 460px;
+}
+.msr_textarea_02 label {
+  display: block;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+.msr_textarea_02 textarea {
+  border: 1px solid #1B73BA;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #333;
+  font-size: 13px;
+  padding: 10px;
+  height: 210px;
+  width: 460px;
+}
+
+/*--------------------------------------
+送信ボタン
+---------------------------------------*/
+.msr_sendbtn_02{
+  margin:0 0 10px;
+}
+.msr_sendbtn_02 input[type=submit] {
+  background: url(/stylerecipe_img/arrow_blue02.png) no-repeat;
+  background-position: 10px;
+  border: 2px solid #1B73BA;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #1B73BA;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  height: 40px;
+  width: 150px;
+}
+.msr_sendbtn_02 input[type=submit]:hover {
+  opacity: 0.6;
+}
+.msr_sendbtn_02 input[disabled=disabled] {
+  background: #B4B4B4 url(/stylerecipe_img/arrow_gray02.png) no-repeat;
+  background-position: 10px;
+  border: 2px solid #7E7E7E;
+  color: #7E7E7E;
+  cursor: default;
+}
+.msr_sendbtn_02 input[disabled=disabled]:hover {
+  opacity: 1;
+}
+body {
+  background-color: #2E2E2E;
+}
+
+p {
+  color: white;
+  line-height: 25pt;
+  text-align: center;
+}
+
+.inner {
+  display: inline-block;
+}
+
+.blist {
+  color: white;
+}
+@charset "UTF-8";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 18, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+header {
+  margin: 0px;
+  color: white;
+  font-family: "SmartFontUI";
+}
+
+/* line 24, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+header nav a.current {
+  　border-bottom: 3px solid #92D050;
+}
+
+/* line 28, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+header nav a:hover {
+  　color: #E7DA66;
+  　border-bottom: 3px solid #F0E475;
+}
+
+/* line 33, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+header nav ul li {
+  display: inline-block;
+  text-align: center;
+}
+
+/* line 38, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+body {
+  margin: 0px;
+  background-image: url("public/images/https___www.pakutaso.com_shared_img_thumb_KUMA1892068.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2e2e2e;
+}
+
+/* line 46, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+.pagetitle {
+  font-size: 40pt;
+  color: white;
+}
+
+/* line 51, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+h1 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 20pt;
+  font-family: "Anurati";
+  letter-spacing: 15px;
+}
+
+/* line 59, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+h2 {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 15pt;
+  font-family: "SmartFontUI";
+  text-align: center;
+  color: white;
+}
+
+/* line 68, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+h3 {
+  margin-top: 60px;
+  margin-bottom: 8px;
+  font-size: 13pt;
+  font-family: "SmartFontUI";
+  text-align: center;
+  color: #0999ff;
+}
+
+/* line 77, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+header {
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+/* line 87, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+.main {
+  background-color: #2e2e2e;
+  background-size: auto;
+  text-align: center;
+}
+
+/* line 92, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+.maincontent {
+  color: white;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  height: auto;
+}
+
+/* line 101, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+a {
+  transition: color .5s;
+}
+
+/* line 104, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 107, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+a:visited {
+  color: #0999ff;
+}
+
+/* line 108, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+a:hover {
+  color: #3939ff;
+}
+
+/* line 109, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+a {
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+}
+
+/* line 114, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+a::after {
+  position: absolute;
+  bottom: .3em;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #3960ff;
+  opacity: 0;
+  transition: .3s;
+}
+
+/* line 125, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+a:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+/* line 130, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+.box-1x1:before {
+  content: "";
+  display: inline-block;
+  padding-top: 100%;
+}
+
+/* line 135, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 142, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+.maincontent p {
+  line-height: 1.5em;
+}
+
+/* line 146, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+.inp {
+  color: white;
+  font-size: 12pt;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* line 153, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+.blist {
+  color: white;
+  line-height: 25pt;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* line 160, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+.board {
+  text-align: left;
+}
+
+/* line 164, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+.button {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* line 169, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+.square_btn {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: white;
+  border: solid 2px white;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+/* line 179, /Users/nakanotomohiro/Documents/GitHub/Asterism/app/assets/stylesheets/application.css.scss */
+.square_btn:hover {
+  background: white;
+  color: black;
+}
