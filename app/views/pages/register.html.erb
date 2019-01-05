@@ -4,8 +4,9 @@
   <title="register">
 </head>
 <body>
-  <h1>Well Come to Asterism</h1>
+  <h1>Welcome to Asterism</h1>
 
+  <div class="inp">
   <%= form_tag("/register",method: :post) do %>
     <%= label_tag"名前" %>
     <%= text_field_tag :username%><br>
@@ -13,6 +14,7 @@
     <%= password_field_tag :password%><br>
     <%=submit_tag"送信" %>
   <% end %>
-  
+  </div>
+
 </body>
 </html>
