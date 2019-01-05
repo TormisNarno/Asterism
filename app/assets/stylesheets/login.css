@@ -1,0 +1,24 @@
+h1 {
+  color:white;
+  font-size: 20pt;
+  text-align: center;
+}
+
+.intro{
+  color:white;
+  line-height: normal;
+  font-size: 13pt;
+  font-family: "SmartFontUI";
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.error{
+  color:red;
+  text-align: center;
+}
+
+.button{
+  margin-top: 30px;
+}

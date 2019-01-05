@@ -1,0 +1,181 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+header {
+  margin: 0px;
+  color: white;
+  font-family: "SmartFontUI"
+}
+
+ header nav a.current{
+ 　border-bottom: 3px solid #92D050;
+ }
+
+ header nav a:hover{
+ 　color: #E7DA66;
+ 　border-bottom: 3px solid #F0E475;
+ }
+
+ header nav ul li {
+   display: inline-block;
+   text-align: center;
+ }
+
+ body {
+   margin: 0px;
+   background-image: url("public/images/https___www.pakutaso.com_shared_img_thumb_KUMA1892068.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: #2e2e2e;
+ }
+
+.pagetitle {
+   font-size: 40pt;
+   color: white;
+ }
+
+ h1 {
+   margin-top: 40px;
+   margin-bottom: 10px;
+   font-size: 20pt;
+   font-family: "Anurati";
+   letter-spacing: 15px;
+ }
+
+ h2 {
+   margin-top: 50px;
+   margin-bottom: 25px;
+   font-size: 15pt;
+   font-family: "SmartFontUI";
+   text-align: center;
+   color: white;
+ }
+
+ h3 {
+   margin-top: 60px;
+   margin-bottom: 8px;
+   font-size: 13pt;
+   font-family: "SmartFontUI";
+   text-align: center;
+   color: #0999ff;
+ }
+
+ header {
+     padding-top: 0px;
+     padding-bottom: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     text-align: center;
+ }
+
+ .main {
+   background-color: #2e2e2e;
+   background-size: auto;
+   text-align: center;
+ }
+ .maincontent{
+   color: white;
+   position: relative;
+   display: inline-block;
+   text-align: center;
+   width: 50%;
+   height: auto;
+ }
+
+a {
+transition: color .5s;
+}
+a:link { color: #ffffff;
+text-decoration: none;
+}
+a:visited { color: #0999ff; }
+a:hover { color: #3939ff;}
+a {
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+}
+a::after {
+  position: absolute;
+  bottom: .3em;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #3960ff;
+  opacity: 0;
+  transition: .3s;
+}
+a:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+ .box-1x1:before {
+    content: "";
+    display: inline-block;
+    padding-top: 100%;
+}
+.inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.maincontent p {
+    line-height:1.5em;
+}
+
+.inp{
+  color:white;
+  font-size: 12pt;
+  text-align: center;
+  line-height: 40px;
+}
+
+.blist {
+  color: white;
+  line-height: 25pt;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.board {
+  text-align: left;
+}
+
+ .button{
+   text-align: center;
+   margin-bottom: 60px;
+ }
+
+ .square_btn {
+     display: inline-block;
+     padding: 0.3em 1em;
+     text-decoration: none;
+     color: white;
+     border: solid 2px white;
+     border-radius: 3px;
+     transition: .4s;
+ }
+
+ .square_btn:hover {
+     background: white;
+     color: black;
+ }
