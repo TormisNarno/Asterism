@@ -1,6 +1,14 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title="thread_create">
+	<link rel="stylesheet" type="text/css" href="thread_create.css">
+</head>
 
-<h1>プロジェクト作成</h1>
+<body>
+<h2>プロジェクト作成</h2>
 
+<div class="pjform">
 <%= form_tag("/board/create", method: :post) do %>
 	<%= label_tag "タイトル" %><br>
 	<%= text_field_tag :title %><br>
@@ -10,18 +18,23 @@
 <select id="select">
 	<option value="1">映画</option>
 	<option value="2">演劇</option>
-	<option value="2">3</option>
-	<option value="2">4</option>
+	<option value="2">アート</option>
+	<option value="2">YouTube</option>
 </select><br><br>
 	<%= submit_tag "送信" %>
 <% end %>
-
-<div>
-　例<br>
- プロジェクトタイトル：劇団屍鬼<br>
-　募集内容：キャスト募集：5名<br>
-　補足情報：期間三か月：<br>
-　連絡先：000-0000-0000：屍鬼@gmail.com<br>
 </div>
 
-<a href="/">TOPに戻る</a><br>
+<div class="example">
+　〈例〉<br>
+	<p>プロジェクトタイトル：劇団屍鬼<br>
+　募集内容：キャスト募集：5名<br>
+　補足情報：期間三か月：<br>
+　連絡先：000-0000-0000：屍鬼@gmail.com<br></p>
+</div>
+
+<div class="button">
+<a href="/" class="square_btn">TOPに戻る</a><br>
+</div>
+</body>
+</html>
