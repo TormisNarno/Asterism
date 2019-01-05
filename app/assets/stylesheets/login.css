@@ -1,26 +1,24 @@
-h1{
-  color:black;
-  font-size: 1in;
-  font-weight: bold;
-  font-family: 'ヒラギノ明朝 Pro W3',Georgia；cursive;
-  text-align: center
+h1 {
+  color:white;
+  font-size: 20pt;
+  text-align: center;
 }
-.erorr{
+
+.intro{
+  color:white;
+  line-height: normal;
+  font-size: 13pt;
+  font-family: "SmartFontUI";
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.error{
   color:red;
   text-align: center;
-
 }
 
-.inp{
-  color:black;
-  font-size: ;
-  text-align: center;
-}
-
-
-.reg{
-  A:link{color:blue};
-  A:visited{color:red};
-  text-align: center;
-
+.button{
+  margin-top: 30px;
 }
