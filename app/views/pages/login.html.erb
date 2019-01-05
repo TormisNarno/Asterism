@@ -1,26 +1,34 @@
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title="login">
-  <link rel="stylesheet" type="text/css" href="application.css">
-
+  <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
-  <h1>Asterism</h1>
+  <h1>ASTERISM</h1>
+
+  <div class="intro">
+    <p>アステリズムは、学生のクリエイティヴな活動を支援することを目的とした、<br>人材のマッチングプラットフォームです。<br>
+    掲示板形式のページに募集の書き込みを行うと、<br>ユーザーがそれに応募できるようになっています。<br>
+    また、自主制作映画のロケ地探しに役立つ地図にもアクセスできます。<br>
+  </p>
+  </div>
 
   <% if flash[:error_message] %>
     <div class="error"><%=flash[:error_message] %></div>
   <%end%>
 
-  <div class="inp">
+  <div class="inp" width="500">
   <%= form_tag("/login",method: :post) do %>
     <%= label_tag "名前" %>
     <%= text_field_tag :username%><br>
     <%= label_tag "パスワード" %>
     <%= password_field_tag :password%><br>
-    <%= submit_tag "送信" %>
+    <%= submit_tag "ログイン" %>
   <% end %>
   </div>
-  <a class="reg" href="/register">新規登録はこちらから</a><br>
+  <div class="button">
+    <a href="/register" class="square_btn">新規登録はこちらから</a><br>
+  </div>
 </body>
 </html>
